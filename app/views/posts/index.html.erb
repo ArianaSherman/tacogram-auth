@@ -4,7 +4,7 @@
       <h4>
         <%if post["user_id"]%>
           <%postuser=User.find_by({"id"=>post["user_id"]})%>
-          <%=postuser["first_name"]%> <%=postuser["last_name"]%>
+          <%=postuser["first_name"]%>
         <%else%>
           anonymous
         <%end%>
